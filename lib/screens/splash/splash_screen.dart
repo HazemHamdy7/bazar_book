@@ -38,17 +38,19 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SafeArea(
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: .center,
+            crossAxisAlignment: .center,
             children: [
               // Stylized plus/cross icon
               Row(
+                mainAxisAlignment: .center,
                 children: [
                   Image.asset('assets/images/Vector.png'),
+                  SizedBox(width: 12),
                   Image.asset('assets/images/Chapter.png'),
                 ],
               ),
-              Image.asset('assets/images/Vector2.png'),
+              Image.asset(width: 100, height: 100, 'assets/images/Vector2.png'),
             ],
           ),
         ),
